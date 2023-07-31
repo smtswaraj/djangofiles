@@ -1,0 +1,12 @@
+{% extends 'fileuploade/base.html' %}
+{% block content %}
+        <ul>
+            {% for i in image %}
+                <li>
+                    <img src="{{i.file_Upload.url}}" alt="">
+                </li>
+            {% endfor %}
+        </ul>
+            <!-- <img src="" alt=""> -->
+
+{% endblock %}
